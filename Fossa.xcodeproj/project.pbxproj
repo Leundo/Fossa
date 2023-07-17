@@ -11,6 +11,23 @@
 		7174871A2A64F49F0051A587 /* Fossa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7174870F2A64F49F0051A587 /* Fossa.framework */; };
 		7174871F2A64F49F0051A587 /* FossaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174871E2A64F49F0051A587 /* FossaTests.swift */; };
 		717487202A64F49F0051A587 /* Fossa.h in Headers */ = {isa = PBXBuildFile; fileRef = 717487122A64F49F0051A587 /* Fossa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717487302A64F4DE0051A587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174872F2A64F4DE0051A587 /* AppDelegate.swift */; };
+		717487322A64F4DE0051A587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487312A64F4DE0051A587 /* SceneDelegate.swift */; };
+		717487392A64F4DF0051A587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717487382A64F4DF0051A587 /* Assets.xcassets */; };
+		7174873C2A64F4DF0051A587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7174873A2A64F4DF0051A587 /* LaunchScreen.storyboard */; };
+		717487472A64F4DF0051A587 /* FossaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487462A64F4DF0051A587 /* FossaExampleTests.swift */; };
+		717487512A64F4DF0051A587 /* FossaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487502A64F4DF0051A587 /* FossaExampleUITests.swift */; };
+		717487532A64F4DF0051A587 /* FossaExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487522A64F4DF0051A587 /* FossaExampleUITestsLaunchTests.swift */; };
+		717487602A64F7360051A587 /* RouteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174875F2A64F7360051A587 /* RouteController.swift */; };
+		717487662A64F9DB0051A587 /* Handbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487652A64F9DB0051A587 /* Handbook.swift */; };
+		717487762A65199E0051A587 /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487752A65199E0051A587 /* TextFieldContentView.swift */; };
+		717487792A651B2E0051A587 /* Monikerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487782A651B2E0051A587 /* Monikerable.swift */; };
+		7174877C2A651E940051A587 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174877B2A651E940051A587 /* Constant.swift */; };
+		7174877E2A651F220051A587 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174877D2A651F220051A587 /* UIView+.swift */; };
+		717487802A6523E00051A587 /* BudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174877F2A6523E00051A587 /* BudController.swift */; };
+		717487822A6524650051A587 /* SwipeableControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487812A6524650051A587 /* SwipeableControllerDelegate.swift */; };
+		71D054EA2A657B58008031B7 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054E92A657B58008031B7 /* UITextField+.swift */; };
+		71D054ED2A657E3E008031B7 /* NamedTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +38,20 @@
 			remoteGlobalIDString = 7174870E2A64F49F0051A587;
 			remoteInfo = Fossa;
 		};
+		717487432A64F4DF0051A587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717487062A64F49F0051A587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7174872C2A64F4DE0051A587;
+			remoteInfo = FossaExample;
+		};
+		7174874D2A64F4DF0051A587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717487062A64F49F0051A587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7174872C2A64F4DE0051A587;
+			remoteInfo = FossaExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +60,27 @@
 		717487132A64F49F0051A587 /* Fossa.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Fossa.docc; sourceTree = "<group>"; };
 		717487192A64F49F0051A587 /* FossaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FossaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7174871E2A64F49F0051A587 /* FossaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossaTests.swift; sourceTree = "<group>"; };
+		7174872D2A64F4DE0051A587 /* FossaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FossaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7174872F2A64F4DE0051A587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		717487312A64F4DE0051A587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		717487382A64F4DF0051A587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7174873B2A64F4DF0051A587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7174873D2A64F4DF0051A587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717487422A64F4DF0051A587 /* FossaExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FossaExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717487462A64F4DF0051A587 /* FossaExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossaExampleTests.swift; sourceTree = "<group>"; };
+		7174874C2A64F4DF0051A587 /* FossaExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FossaExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717487502A64F4DF0051A587 /* FossaExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossaExampleUITests.swift; sourceTree = "<group>"; };
+		717487522A64F4DF0051A587 /* FossaExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossaExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7174875F2A64F7360051A587 /* RouteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteController.swift; sourceTree = "<group>"; };
+		717487652A64F9DB0051A587 /* Handbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handbook.swift; sourceTree = "<group>"; };
+		717487752A65199E0051A587 /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
+		717487782A651B2E0051A587 /* Monikerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monikerable.swift; sourceTree = "<group>"; };
+		7174877B2A651E940051A587 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7174877D2A651F220051A587 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7174877F2A6523E00051A587 /* BudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudController.swift; sourceTree = "<group>"; };
+		717487812A6524650051A587 /* SwipeableControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableControllerDelegate.swift; sourceTree = "<group>"; };
+		71D054E92A657B58008031B7 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedTextFieldContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +99,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7174872A2A64F4DE0051A587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174873F2A64F4DF0051A587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717487492A64F4DF0051A587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +128,9 @@
 			children = (
 				717487112A64F49F0051A587 /* Fossa */,
 				7174871D2A64F49F0051A587 /* FossaTests */,
+				7174872E2A64F4DE0051A587 /* FossaExample */,
+				717487452A64F4DF0051A587 /* FossaExampleTests */,
+				7174874F2A64F4DF0051A587 /* FossaExampleUITests */,
 				717487102A64F49F0051A587 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +140,9 @@
 			children = (
 				7174870F2A64F49F0051A587 /* Fossa.framework */,
 				717487192A64F49F0051A587 /* FossaTests.xctest */,
+				7174872D2A64F4DE0051A587 /* FossaExample.app */,
+				717487422A64F4DF0051A587 /* FossaExampleTests.xctest */,
+				7174874C2A64F4DF0051A587 /* FossaExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +150,11 @@
 		717487112A64F49F0051A587 /* Fossa */ = {
 			isa = PBXGroup;
 			children = (
+				7174877A2A651E880051A587 /* Helpers */,
+				717487772A651AFF0051A587 /* UIViewControllers */,
+				717487732A6519280051A587 /* UIContentViews */,
+				717487632A64F80C0051A587 /* Protocols */,
+				717487622A64F7FC0051A587 /* Models */,
 				717487122A64F49F0051A587 /* Fossa.h */,
 				717487132A64F49F0051A587 /* Fossa.docc */,
 			);
@@ -83,6 +167,112 @@
 				7174871E2A64F49F0051A587 /* FossaTests.swift */,
 			);
 			path = FossaTests;
+			sourceTree = "<group>";
+		};
+		7174872E2A64F4DE0051A587 /* FossaExample */ = {
+			isa = PBXGroup;
+			children = (
+				717487642A64F9C70051A587 /* Helpers */,
+				717487612A64F7DE0051A587 /* Resources */,
+				7174875E2A64F71E0051A587 /* Controller */,
+				7174875D2A64F70D0051A587 /* System */,
+				7174873D2A64F4DF0051A587 /* Info.plist */,
+			);
+			path = FossaExample;
+			sourceTree = "<group>";
+		};
+		717487452A64F4DF0051A587 /* FossaExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				717487462A64F4DF0051A587 /* FossaExampleTests.swift */,
+			);
+			path = FossaExampleTests;
+			sourceTree = "<group>";
+		};
+		7174874F2A64F4DF0051A587 /* FossaExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				717487502A64F4DF0051A587 /* FossaExampleUITests.swift */,
+				717487522A64F4DF0051A587 /* FossaExampleUITestsLaunchTests.swift */,
+			);
+			path = FossaExampleUITests;
+			sourceTree = "<group>";
+		};
+		7174875D2A64F70D0051A587 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				7174872F2A64F4DE0051A587 /* AppDelegate.swift */,
+				717487312A64F4DE0051A587 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		7174875E2A64F71E0051A587 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7174875F2A64F7360051A587 /* RouteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		717487612A64F7DE0051A587 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				717487382A64F4DF0051A587 /* Assets.xcassets */,
+				7174873A2A64F4DF0051A587 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		717487622A64F7FC0051A587 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		717487632A64F80C0051A587 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				717487782A651B2E0051A587 /* Monikerable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		717487642A64F9C70051A587 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				717487652A64F9DB0051A587 /* Handbook.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		717487732A6519280051A587 /* UIContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				717487752A65199E0051A587 /* TextFieldContentView.swift */,
+				71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */,
+			);
+			path = UIContentViews;
+			sourceTree = "<group>";
+		};
+		717487772A651AFF0051A587 /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7174877F2A6523E00051A587 /* BudController.swift */,
+				717487812A6524650051A587 /* SwipeableControllerDelegate.swift */,
+			);
+			path = UIViewControllers;
+			sourceTree = "<group>";
+		};
+		7174877A2A651E880051A587 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7174877B2A651E940051A587 /* Constant.swift */,
+				7174877D2A651F220051A587 /* UIView+.swift */,
+				71D054E92A657B58008031B7 /* UITextField+.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +325,59 @@
 			productReference = 717487192A64F49F0051A587 /* FossaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7174872C2A64F4DE0051A587 /* FossaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717487542A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExample" */;
+			buildPhases = (
+				717487292A64F4DE0051A587 /* Sources */,
+				7174872A2A64F4DE0051A587 /* Frameworks */,
+				7174872B2A64F4DE0051A587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FossaExample;
+			productName = FossaExample;
+			productReference = 7174872D2A64F4DE0051A587 /* FossaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717487412A64F4DF0051A587 /* FossaExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717487572A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExampleTests" */;
+			buildPhases = (
+				7174873E2A64F4DF0051A587 /* Sources */,
+				7174873F2A64F4DF0051A587 /* Frameworks */,
+				717487402A64F4DF0051A587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717487442A64F4DF0051A587 /* PBXTargetDependency */,
+			);
+			name = FossaExampleTests;
+			productName = FossaExampleTests;
+			productReference = 717487422A64F4DF0051A587 /* FossaExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7174874B2A64F4DF0051A587 /* FossaExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7174875A2A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExampleUITests" */;
+			buildPhases = (
+				717487482A64F4DF0051A587 /* Sources */,
+				717487492A64F4DF0051A587 /* Frameworks */,
+				7174874A2A64F4DF0051A587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7174874E2A64F4DF0051A587 /* PBXTargetDependency */,
+			);
+			name = FossaExampleUITests;
+			productName = FossaExampleUITests;
+			productReference = 7174874C2A64F4DF0051A587 /* FossaExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +393,17 @@
 					};
 					717487182A64F49F0051A587 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					7174872C2A64F4DE0051A587 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					717487412A64F4DF0051A587 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7174872C2A64F4DE0051A587;
+					};
+					7174874B2A64F4DF0051A587 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7174872C2A64F4DE0051A587;
 					};
 				};
 			};
@@ -168,6 +422,9 @@
 			targets = (
 				7174870E2A64F49F0051A587 /* Fossa */,
 				717487182A64F49F0051A587 /* FossaTests */,
+				7174872C2A64F4DE0051A587 /* FossaExample */,
+				717487412A64F4DF0051A587 /* FossaExampleTests */,
+				7174874B2A64F4DF0051A587 /* FossaExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +444,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7174872B2A64F4DE0051A587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7174873C2A64F4DF0051A587 /* LaunchScreen.storyboard in Resources */,
+				717487392A64F4DF0051A587 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717487402A64F4DF0051A587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174874A2A64F4DF0051A587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,7 +474,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D054ED2A657E3E008031B7 /* NamedTextFieldContentView.swift in Sources */,
+				717487822A6524650051A587 /* SwipeableControllerDelegate.swift in Sources */,
+				717487792A651B2E0051A587 /* Monikerable.swift in Sources */,
+				717487762A65199E0051A587 /* TextFieldContentView.swift in Sources */,
 				717487142A64F49F0051A587 /* Fossa.docc in Sources */,
+				7174877C2A651E940051A587 /* Constant.swift in Sources */,
+				7174877E2A651F220051A587 /* UIView+.swift in Sources */,
+				717487802A6523E00051A587 /* BudController.swift in Sources */,
+				71D054EA2A657B58008031B7 /* UITextField+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +494,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		717487292A64F4DE0051A587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717487302A64F4DE0051A587 /* AppDelegate.swift in Sources */,
+				717487322A64F4DE0051A587 /* SceneDelegate.swift in Sources */,
+				717487602A64F7360051A587 /* RouteController.swift in Sources */,
+				717487662A64F9DB0051A587 /* Handbook.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174873E2A64F4DF0051A587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717487472A64F4DF0051A587 /* FossaExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717487482A64F4DF0051A587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717487532A64F4DF0051A587 /* FossaExampleUITestsLaunchTests.swift in Sources */,
+				717487512A64F4DF0051A587 /* FossaExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,7 +530,28 @@
 			target = 7174870E2A64F49F0051A587 /* Fossa */;
 			targetProxy = 7174871B2A64F49F0051A587 /* PBXContainerItemProxy */;
 		};
+		717487442A64F4DF0051A587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7174872C2A64F4DE0051A587 /* FossaExample */;
+			targetProxy = 717487432A64F4DF0051A587 /* PBXContainerItemProxy */;
+		};
+		7174874E2A64F4DF0051A587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7174872C2A64F4DE0051A587 /* FossaExample */;
+			targetProxy = 7174874D2A64F4DF0051A587 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7174873A2A64F4DF0051A587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7174873B2A64F4DF0051A587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		717487212A64F49F0051A587 /* Debug */ = {
@@ -268,7 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +688,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +720,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +741,7 @@
 		717487272A64F49F0051A587 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 923Q86W73B;
@@ -418,6 +758,7 @@
 		717487282A64F49F0051A587 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 923Q86W73B;
@@ -428,6 +769,140 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		717487552A64F4DF0051A587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FossaExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717487562A64F4DF0051A587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FossaExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		717487582A64F4DF0051A587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FossaExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FossaExample";
+			};
+			name = Debug;
+		};
+		717487592A64F4DF0051A587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FossaExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FossaExample";
+			};
+			name = Release;
+		};
+		7174875B2A64F4DF0051A587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FossaExample;
+			};
+			name = Debug;
+		};
+		7174875C2A64F4DF0051A587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 923Q86W73B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.FossaExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FossaExample;
 			};
 			name = Release;
 		};
@@ -457,6 +932,33 @@
 			buildConfigurations = (
 				717487272A64F49F0051A587 /* Debug */,
 				717487282A64F49F0051A587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717487542A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717487552A64F4DF0051A587 /* Debug */,
+				717487562A64F4DF0051A587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717487572A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717487582A64F4DF0051A587 /* Debug */,
+				717487592A64F4DF0051A587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7174875A2A64F4DF0051A587 /* Build configuration list for PBXNativeTarget "FossaExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7174875B2A64F4DF0051A587 /* Debug */,
+				7174875C2A64F4DF0051A587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
