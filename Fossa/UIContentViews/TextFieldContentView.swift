@@ -10,7 +10,7 @@ import UIKit
 
 
 public class TextFieldContentView: UIView & UIContentView {
-    public static let constraintHeight: CGFloat = Constant.standardHeight
+    private let constraintHeight: CGFloat = Constant.standardHeight
     
     private let textField = UITextField()
     
@@ -27,7 +27,7 @@ public class TextFieldContentView: UIView & UIContentView {
     }
     
     public override var intrinsicContentSize: CGSize {
-        CGSize(width: 0, height: Self.constraintHeight)
+        CGSize(width: 0, height: constraintHeight)
     }
     
     required init?(coder: NSCoder) {

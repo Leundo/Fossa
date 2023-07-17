@@ -28,6 +28,8 @@
 		717487822A6524650051A587 /* SwipeableControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717487812A6524650051A587 /* SwipeableControllerDelegate.swift */; };
 		71D054EA2A657B58008031B7 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054E92A657B58008031B7 /* UITextField+.swift */; };
 		71D054ED2A657E3E008031B7 /* NamedTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */; };
+		71D054EF2A658E0A008031B7 /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */; };
+		71D054F12A659A7F008031B7 /* WheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		717487812A6524650051A587 /* SwipeableControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableControllerDelegate.swift; sourceTree = "<group>"; };
 		71D054E92A657B58008031B7 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedTextFieldContentView.swift; sourceTree = "<group>"; };
+		71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
+		71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,8 @@
 			children = (
 				717487752A65199E0051A587 /* TextFieldContentView.swift */,
 				71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */,
+				71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */,
+				71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */,
 			);
 			path = UIContentViews;
 			sourceTree = "<group>";
@@ -480,7 +486,9 @@
 				717487762A65199E0051A587 /* TextFieldContentView.swift in Sources */,
 				717487142A64F49F0051A587 /* Fossa.docc in Sources */,
 				7174877C2A651E940051A587 /* Constant.swift in Sources */,
+				71D054EF2A658E0A008031B7 /* DatePickerContentView.swift in Sources */,
 				7174877E2A651F220051A587 /* UIView+.swift in Sources */,
+				71D054F12A659A7F008031B7 /* WheelPickerContentView.swift in Sources */,
 				717487802A6523E00051A587 /* BudController.swift in Sources */,
 				71D054EA2A657B58008031B7 /* UITextField+.swift in Sources */,
 			);

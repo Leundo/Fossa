@@ -60,7 +60,7 @@ open class BudController<ViewModel: BudViewModel<Item>, Item: BudItem>: UIViewCo
         return UICollectionViewCompositionalLayout.list(using: config)
     }
     
-    public func configureHierarchy() {
+    open func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.allowsMultipleSelectionDuringEditing = true
         collectionView.delegate = self

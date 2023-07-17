@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 
-class NamedTextFieldContentView: UIView & UIContentView {
-    public static let constraintHeight: CGFloat = Constant.standardHeight
-    public static let constraintLeftPadding: CGFloat = Constant.standardHorizonPadding
-    public static let constraintRightPadding: CGFloat = Constant.standardHorizonPadding
-    public static let constraintSpace: CGFloat = 8
+public class NamedTextFieldContentView<Value: NamedTextFieldContentValue>: UIView & UIContentView, UITextFieldDelegate {
+    private let constraintHeight: CGFloat = Constant.standardHeight
+    private let constraintLeftPadding: CGFloat = Constant.standardHorizonPadding
+    private let constraintRightPadding: CGFloat = Constant.standardHorizonPadding
+    private let constraintSpace: CGFloat = 8
     
     private let label = UILabel()
     private let textField = UITextField()
@@ -31,7 +31,7 @@ class NamedTextFieldContentView: UIView & UIContentView {
     }
     
     public override var intrinsicContentSize: CGSize {
-        CGSize(width: 0, height: Self.constraintHeight)
+        CGSize(width: 0, height: constraintHeight)
     }
     
     required init?(coder: NSCoder) {
@@ -39,9 +39,9 @@ class NamedTextFieldContentView: UIView & UIContentView {
     }
     
     public func configure(configuration: UIContentConfiguration) {
-        guard let configuration = configuration as? NamedTextFieldContentConfiguration else { return }
+        guard let configuration = configuration as? NamedTextFieldContentConfiguration<Value> else { return }
         label.text = configuration.label
-        textField.text = configuration.value
+        textField.text = configuration.value?.toStringAtFossa()
         textField.placeholder = configuration.placeholder
         textField.textAlignment = .right
     }
@@ -50,6 +50,7 @@ class NamedTextFieldContentView: UIView & UIContentView {
         textField.addTarget(self, action: #selector(textFieldDidChanged(_ :)), for: .editingChanged)
         textField.clearButtonMode = .whileEditing
         textField.returnKeyType = .done
+        textField.keyboardType = Value.usedKeyboardTypeAtFossa
         textField.doneAccessory = true
         
         addSubview(textField)
@@ -66,23 +67,21 @@ class NamedTextFieldContentView: UIView & UIContentView {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: topAnchor),
             label.bottomAnchor.constraint(equalTo: bottomAnchor),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Self.constraintLeftPadding),
-            label.trailingAnchor.constraint(equalTo: textField.leadingAnchor, constant: -Self.constraintSpace),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: constraintLeftPadding),
+            label.trailingAnchor.constraint(equalTo: textField.leadingAnchor, constant: -constraintSpace),
             
             textField.topAnchor.constraint(equalTo: topAnchor),
             textField.bottomAnchor.constraint(equalTo: bottomAnchor),
-            textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Self.constraintRightPadding),
+            textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -constraintRightPadding),
         ])
     }
     
     @objc private func textFieldDidChanged(_ sender: UITextField) {
-        guard let configuration = configuration as? TextFieldContentConfiguration else { return }
-        configuration.callbackOnChange?(configuration.moniker, sender.text)
+        guard let configuration = configuration as? NamedTextFieldContentConfiguration<Value> else { return }
+        configuration.callbackOnChange?(configuration.moniker, Value.fromAtFossa(sender.text))
     }
-}
 
-
-extension NamedTextFieldContentView: UITextFieldDelegate {
+    // MARK: - TextField
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -101,9 +100,9 @@ extension NamedTextFieldContentView: UITextFieldDelegate {
 }
 
 
-public struct NamedTextFieldContentConfiguration: UIContentConfiguration {
+public struct NamedTextFieldContentConfiguration<Value: NamedTextFieldContentValue>: UIContentConfiguration {
     public func makeContentView() -> UIView & UIContentView {
-        return NamedTextFieldContentView(self)
+        return NamedTextFieldContentView<Value>(self)
     }
     
     public func updated(for state: UIConfigurationState) -> NamedTextFieldContentConfiguration {
@@ -112,11 +111,11 @@ public struct NamedTextFieldContentConfiguration: UIContentConfiguration {
     
     public var moniker: String?
     public var label: String?
-    public var value: String?
+    public var value: Value?
     public var placeholder: String?
     public var maximumTextLength: Int?
     
-    public var callbackOnChange: ((String?, String?) -> Void)?
+    public var callbackOnChange: ((String?, Value?) -> Void)?
     
     init() {}
     
@@ -126,9 +125,57 @@ public struct NamedTextFieldContentConfiguration: UIContentConfiguration {
         return configuration
     }
     
-    public func onChange(callback: @escaping (_ moniker: String?, _ value: String?) -> Void) -> NamedTextFieldContentConfiguration {
+    public func onChange(callback: @escaping (_ moniker: String?, _ value: Value?) -> Void) -> NamedTextFieldContentConfiguration {
         var configuration = self
         configuration.callbackOnChange = callback
         return configuration
+    }
+}
+
+
+public protocol NamedTextFieldContentValue {
+    static var usedKeyboardTypeAtFossa: UIKeyboardType { get }
+    static func fromAtFossa(_ string: String?) -> Self?
+    func toStringAtFossa() -> String
+}
+
+
+extension String: NamedTextFieldContentValue {
+    public static let usedKeyboardTypeAtFossa: UIKeyboardType = .default
+    
+    public static func fromAtFossa(_ string: String?) -> String? {
+        return string
+    }
+    
+    public func toStringAtFossa() -> String {
+        return self
+    }
+}
+
+
+extension Int: NamedTextFieldContentValue {
+    public static let usedKeyboardTypeAtFossa: UIKeyboardType = .numberPad
+    
+    public static func fromAtFossa(_ string: String?) -> Int? {
+        guard let string = string else { return nil }
+        return Int(string)
+    }
+    
+    public func toStringAtFossa() -> String {
+        return String(self)
+    }
+}
+
+
+extension Double: NamedTextFieldContentValue {
+    public static let usedKeyboardTypeAtFossa: UIKeyboardType = .decimalPad
+    
+    public static func fromAtFossa(_ string: String?) -> Double? {
+        guard let string = string else { return nil }
+        return Double(string)
+    }
+    
+    public func toStringAtFossa() -> String {
+        return String(self)
     }
 }
