@@ -54,9 +54,11 @@ open class BudController<ViewModel: BudViewModel<Item>, Item: BudItem>: UIViewCo
         configureDataSource()
     }
     
+    open override func viewWillAppear(_ animated: Bool) {}
+    
     // MARK: - Layout
     open func createLayout() -> UICollectionViewLayout {
-        let config = UICollectionLayoutListConfiguration(appearance: .plain)
+        let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         return UICollectionViewCompositionalLayout.list(using: config)
     }
     

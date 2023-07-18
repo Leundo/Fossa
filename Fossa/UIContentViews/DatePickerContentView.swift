@@ -58,6 +58,7 @@ class DatePickerContentView: UIView & UIContentView, UITextFieldDelegate {
         textField.delegate = self
         textField.inputView = datePicker
         textField.tintColor = .clear
+        textField.textColor = .secondaryLabel
         textField.doneAccessory = true
         
         addSubview(textField)

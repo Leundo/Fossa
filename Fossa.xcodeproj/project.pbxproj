@@ -33,6 +33,7 @@
 		71D054F32A65A405008031B7 /* TextAreaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F22A65A405008031B7 /* TextAreaContentView.swift */; };
 		71D054F52A65A568008031B7 /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F42A65A568008031B7 /* UITextView+.swift */; };
 		71D054F82A663192008031B7 /* FloretController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F72A663192008031B7 /* FloretController.swift */; };
+		71D055002A666F0D008031B7 /* MultipleTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054FF2A666F0D008031B7 /* MultipleTextFieldController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		71D054F22A65A405008031B7 /* TextAreaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaContentView.swift; sourceTree = "<group>"; };
 		71D054F42A65A568008031B7 /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
 		71D054F72A663192008031B7 /* FloretController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloretController.swift; sourceTree = "<group>"; };
+		71D054FF2A666F0D008031B7 /* MultipleTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTextFieldController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 			children = (
 				7174877F2A6523E00051A587 /* BudController.swift */,
 				717487812A6524650051A587 /* SwipeableControllerDelegate.swift */,
+				71D054FF2A666F0D008031B7 /* MultipleTextFieldController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D055002A666F0D008031B7 /* MultipleTextFieldController.swift in Sources */,
 				71D054ED2A657E3E008031B7 /* NamedTextFieldContentView.swift in Sources */,
 				717487822A6524650051A587 /* SwipeableControllerDelegate.swift in Sources */,
 				717487792A651B2E0051A587 /* Monikerable.swift in Sources */,

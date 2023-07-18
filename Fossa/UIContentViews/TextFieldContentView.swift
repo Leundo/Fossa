@@ -49,6 +49,7 @@ public class TextFieldContentView: UIView & UIContentView {
         textField.addTarget(self, action: #selector(textFieldDidChanged(_ :)), for: .editingChanged)
         textField.clearButtonMode = .whileEditing
         textField.returnKeyType = .done
+        textField.autocorrectionType = .no
         textField.doneAccessory = true
 
         addPinnedSubview(textField, insets: UIEdgeInsets(top: 0, left: Constant.standardHorizonPadding, bottom: 0, right: Constant.standardHorizonPadding))

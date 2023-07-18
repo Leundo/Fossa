@@ -52,6 +52,8 @@ public class NamedTextFieldContentView<Value: NamedTextFieldContentValue>: UIVie
         textField.clearButtonMode = .whileEditing
         textField.returnKeyType = .done
         textField.doneAccessory = true
+        textField.textColor = .secondaryLabel
+        textField.autocorrectionType = .no
         textField.delegate = self
         
         addSubview(textField)

@@ -56,6 +56,7 @@ class WheelPickerContentView<Value: WheelPickerContentValue>: UIView & UIContent
         textField.delegate = self
         textField.inputView = picker
         textField.tintColor = .clear
+        textField.textColor = .secondaryLabel
         textField.doneAccessory = true
         
         addSubview(textField)

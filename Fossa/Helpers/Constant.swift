@@ -10,5 +10,5 @@ import Foundation
 
 class Constant {
     static let standardHeight: CGFloat = 44
-    static let standardHorizonPadding: CGFloat = 16
+    static let standardHorizonPadding: CGFloat = 20
 }
