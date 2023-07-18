@@ -44,14 +44,15 @@ public class NamedTextFieldContentView<Value: NamedTextFieldContentValue>: UIVie
         textField.text = configuration.value?.toStringAtFossa()
         textField.placeholder = configuration.placeholder
         textField.textAlignment = .right
+        textField.keyboardType = configuration.keyboardType ?? Value.usedKeyboardTypeAtFossa
     }
     
     private func configureLayout() {
         textField.addTarget(self, action: #selector(textFieldDidChanged(_ :)), for: .editingChanged)
         textField.clearButtonMode = .whileEditing
         textField.returnKeyType = .done
-        textField.keyboardType = Value.usedKeyboardTypeAtFossa
         textField.doneAccessory = true
+        textField.delegate = self
         
         addSubview(textField)
         addSubview(label)
@@ -114,6 +115,7 @@ public struct NamedTextFieldContentConfiguration<Value: NamedTextFieldContentVal
     public var value: Value?
     public var placeholder: String?
     public var maximumTextLength: Int?
+    public var keyboardType: UIKeyboardType?
     
     public var callbackOnChange: ((String?, Value?) -> Void)?
     

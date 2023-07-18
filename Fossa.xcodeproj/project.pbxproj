@@ -30,6 +30,9 @@
 		71D054ED2A657E3E008031B7 /* NamedTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */; };
 		71D054EF2A658E0A008031B7 /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */; };
 		71D054F12A659A7F008031B7 /* WheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */; };
+		71D054F32A65A405008031B7 /* TextAreaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F22A65A405008031B7 /* TextAreaContentView.swift */; };
+		71D054F52A65A568008031B7 /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F42A65A568008031B7 /* UITextView+.swift */; };
+		71D054F82A663192008031B7 /* FloretController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D054F72A663192008031B7 /* FloretController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedTextFieldContentView.swift; sourceTree = "<group>"; };
 		71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 		71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerContentView.swift; sourceTree = "<group>"; };
+		71D054F22A65A405008031B7 /* TextAreaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaContentView.swift; sourceTree = "<group>"; };
+		71D054F42A65A568008031B7 /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
+		71D054F72A663192008031B7 /* FloretController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloretController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +264,7 @@
 				71D054EC2A657E3E008031B7 /* NamedTextFieldContentView.swift */,
 				71D054EE2A658E0A008031B7 /* DatePickerContentView.swift */,
 				71D054F02A659A7F008031B7 /* WheelPickerContentView.swift */,
+				71D054F22A65A405008031B7 /* TextAreaContentView.swift */,
 			);
 			path = UIContentViews;
 			sourceTree = "<group>";
@@ -267,6 +274,7 @@
 			children = (
 				7174877F2A6523E00051A587 /* BudController.swift */,
 				717487812A6524650051A587 /* SwipeableControllerDelegate.swift */,
+				71D054F72A663192008031B7 /* FloretController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 				7174877B2A651E940051A587 /* Constant.swift */,
 				7174877D2A651F220051A587 /* UIView+.swift */,
 				71D054E92A657B58008031B7 /* UITextField+.swift */,
+				71D054F42A65A568008031B7 /* UITextView+.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -484,9 +493,12 @@
 				717487822A6524650051A587 /* SwipeableControllerDelegate.swift in Sources */,
 				717487792A651B2E0051A587 /* Monikerable.swift in Sources */,
 				717487762A65199E0051A587 /* TextFieldContentView.swift in Sources */,
+				71D054F32A65A405008031B7 /* TextAreaContentView.swift in Sources */,
 				717487142A64F49F0051A587 /* Fossa.docc in Sources */,
 				7174877C2A651E940051A587 /* Constant.swift in Sources */,
 				71D054EF2A658E0A008031B7 /* DatePickerContentView.swift in Sources */,
+				71D054F52A65A568008031B7 /* UITextView+.swift in Sources */,
+				71D054F82A663192008031B7 /* FloretController.swift in Sources */,
 				7174877E2A651F220051A587 /* UIView+.swift in Sources */,
 				71D054F12A659A7F008031B7 /* WheelPickerContentView.swift in Sources */,
 				717487802A6523E00051A587 /* BudController.swift in Sources */,
