@@ -44,6 +44,7 @@ class DatePickerContentView: UIView & UIContentView, UITextFieldDelegate {
         label.text = configuration.label
         textField.text = configuration.formatter.string(for: configuration.value)
         textField.placeholder = configuration.placeholder
+        textField.clearButtonMode = configuration.clearButtonMode
         textField.textAlignment = .right
         datePicker.date = configuration.value ?? Date()
     }
@@ -53,7 +54,6 @@ class DatePickerContentView: UIView & UIContentView, UITextFieldDelegate {
         datePicker.addTarget(self, action: #selector(datePickerDidChanged(_: )), for: .valueChanged)
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .wheels
-        textField.clearButtonMode = .unlessEditing
         textField.returnKeyType = .done
         textField.delegate = self
         textField.inputView = datePicker
@@ -112,6 +112,7 @@ public struct DatePickerContentConfiguration: UIContentConfiguration {
     public var label: String?
     public var value: Date?
     public var placeholder: String?
+    public var clearButtonMode: UITextField.ViewMode = .unlessEditing
     public var formatter: Formatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd"
