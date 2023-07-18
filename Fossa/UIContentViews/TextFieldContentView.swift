@@ -41,6 +41,8 @@ public class TextFieldContentView: UIView & UIContentView {
         textField.isEnabled = configuration.isEnabled
         if let textColor = configuration.textColor {
             textField.textColor = textColor
+        } else {
+            textField.textColor = .label
         }
     }
     

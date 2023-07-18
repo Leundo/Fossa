@@ -116,6 +116,16 @@ public class MultipleTextFieldController: BudController<MultipleTextFieldViewMod
     
     
     // MARK: - Collcetion
+    public override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else { return false }
+        switch item {
+        case .add:
+            return true
+        default:
+            return false
+        }
+    }
+    
     public override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
