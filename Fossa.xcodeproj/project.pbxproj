@@ -160,6 +160,7 @@
 		717487112A64F49F0051A587 /* Fossa */ = {
 			isa = PBXGroup;
 			children = (
+				71D054FD2A665395008031B7 /* Trashs */,
 				7174877A2A651E880051A587 /* Helpers */,
 				717487772A651AFF0051A587 /* UIViewControllers */,
 				717487732A6519280051A587 /* UIContentViews */,
@@ -274,7 +275,6 @@
 			children = (
 				7174877F2A6523E00051A587 /* BudController.swift */,
 				717487812A6524650051A587 /* SwipeableControllerDelegate.swift */,
-				71D054F72A663192008031B7 /* FloretController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -288,6 +288,14 @@
 				71D054F42A65A568008031B7 /* UITextView+.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		71D054FD2A665395008031B7 /* Trashs */ = {
+			isa = PBXGroup;
+			children = (
+				71D054F72A663192008031B7 /* FloretController.swift */,
+			);
+			path = Trashs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

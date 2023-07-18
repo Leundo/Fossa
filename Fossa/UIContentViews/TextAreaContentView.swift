@@ -38,6 +38,7 @@ public class TextAreaContentView: UIView & UIContentView {
     public func configure(configuration: UIContentConfiguration) {
         guard let configuration = configuration as? TextAreaContentConfiguration else { return }
         textArea.text = configuration.value
+        textArea.isEditable = configuration.isEditable
     }
     
     private func configureLayout() {
@@ -88,6 +89,7 @@ public struct TextAreaContentConfiguration: UIContentConfiguration {
     
     public var moniker: String?
     public var value: String?
+    public var isEditable: Bool = true
     public var maximumTextLength: Int?
     public weak var delegate: TextAreaContentViewDelegate?
     
@@ -111,6 +113,5 @@ public struct TextAreaContentConfiguration: UIContentConfiguration {
 
 
 public protocol TextAreaContentViewDelegate: AnyObject {
-    func updateDataSource(animated: Bool)
     func updateSize(animated: Bool)
 }

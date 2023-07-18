@@ -38,6 +38,10 @@ public class TextFieldContentView: UIView & UIContentView {
         guard let configuration = configuration as? TextFieldContentConfiguration else { return }
         textField.text = configuration.value
         textField.placeholder = configuration.placeholder
+        textField.isEnabled = configuration.isEnabled
+        if let textColor = configuration.textColor {
+            textField.textColor = textColor
+        }
     }
     
     private func configureLayout() {
@@ -90,6 +94,8 @@ public struct TextFieldContentConfiguration: UIContentConfiguration {
     public var value: String?
     public var placeholder: String?
     public var maximumTextLength: Int?
+    public var isEnabled: Bool = true
+    public var textColor: UIColor?
     
     public var callbackOnChange: ((String?, String?) -> Void)?
     

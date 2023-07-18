@@ -95,10 +95,6 @@ class DatePickerContentView: UIView & UIContentView, UITextFieldDelegate {
             configuration.callbackOnChange?(configuration.moniker, nil)
         }
     }
-    
-//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-//        return false
-//    }
 }
 
 
